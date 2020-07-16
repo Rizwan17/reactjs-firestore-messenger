@@ -1,0 +1,48 @@
+.header{
+    width: 100%;
+    position: relative;
+    height: 60px;
+    display: flex;
+    background: #1b5ff9;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 18px;
+    text-shadow: 0 0;
+}
+
+.menu{
+    display: flex;
+    margin: 20px;
+}
+
+.menu > li > a{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0;
+    text-decoration: none;
+}
+
+.leftMenu{
+    display: flex; 
+    color: #fff; 
+    margin: 20px;
+}
+
+.leftMenu > li{
+    margin: 0 10px;
+}
+
+.leftMenu > li > a{
+    color: #fff;
+}
+
+.leftMenu > li > a.active{
+    font-weight: bold;
+}
