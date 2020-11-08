@@ -1,4 +1,4 @@
-import { auth, firestore } from 'firebase';
+import firebase from  'firebase';
 import { authConstanst } from './constants';
 import { getRealtimeUsers } from './user.actions';
 
@@ -6,11 +6,11 @@ export const signup = (user) => {
 
     return async (dispatch) => {
 
-        const db = firestore();
+        const db = firebase.firestore();
 
         dispatch({type: `${authConstanst.USER_LOGIN}_REQUEST`});
 
-        auth()
+        firebase.auth()
         .createUserWithEmailAndPassword(user.email, user.password)
         .then(data => {
             console.log(data);
